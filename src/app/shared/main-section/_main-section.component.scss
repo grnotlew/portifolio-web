@@ -1,0 +1,68 @@
+@use '../../_app.component.scss' as app;
+
+
+section {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+
+  margin-top: 3.5rem;
+
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+
+    span {
+      text-transform: uppercase;
+      font-weight: 400;
+      font-size: 1.5rem;
+      color: app.$primary-color;
+    }
+
+    h1 {
+      background: linear-gradient(90deg, rgba(9, 9, 121, 1) 1%, rgba(0, 212, 255, 1) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: inline-block;
+      font-size: 3.5rem;
+      font-weight: 600;
+      margin: 0;
+    }
+
+    p {
+      font-size: 1.5rem;
+      font-weight: 400;
+      margin: 0.5rem 0 0.5rem 0;
+    }
+  }
+}
+
+svg {
+  width: 18.625rem;
+}
+
+@media (min-width: 1080px) {
+  section {
+    flex-direction: row;
+    justify-content: space-between;
+
+    .main-content {
+      align-items: flex-start;
+      max-width: 50%;
+
+      h1 {
+        font-size: 3.5rem;
+        display: inline-block;
+      }
+    }
+  }
+
+  svg {
+    width: 21.875rem;
+  }
+}

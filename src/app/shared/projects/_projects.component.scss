@@ -1,0 +1,48 @@
+@use '../../_app.component.scss' as app;
+
+section {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2.5rem;
+  font-family: 'Montserrat', sans-serif;
+
+  h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 0px;
+    letter-spacing: 0.25rem;
+  }
+
+  .cards {
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+}
+
+@media (min-width: 1080px) {
+  section {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2.5rem;
+
+    h3 {
+      font-size: 2.5rem;
+      font-weight: 600;
+      margin: 0;
+    }
+
+    .cards {
+      padding: 2rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+  }
+}

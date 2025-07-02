@@ -1,0 +1,26 @@
+@use '../../_app.component.scss' as app;
+
+footer {
+  .socials {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    font-size: 2rem;
+
+    i {
+      color: app.$primary-color;
+    }
+  }
+
+  p {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: app.$primary-color;
+    font-weight: 400;
+    letter-spacing: 0.2rem
+  }
+
+  p i {
+    color: red;
+  }
+}

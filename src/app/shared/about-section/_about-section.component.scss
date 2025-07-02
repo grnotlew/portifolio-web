@@ -1,0 +1,45 @@
+@use '../../_app.component.scss' as app;
+
+section {
+  display: flex;
+  flex-direction: flex-start;
+  font-family: 'Montserrat', sans-serif;
+
+  margin-top: 2rem;
+
+  .about-content {
+    border-left: solid 0.5rem app.$terciary-color;
+    height: 8rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 0.25rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding-left: 1.2rem;
+  }
+}
+
+@media (min-width: 1080px) {
+  section {
+    flex-direction: row;
+    justify-content: space-between;
+
+    h3 {
+      font-size: 2.5rem;
+      font-weight: 600;
+      margin: 0 0 2rem 0;
+    }
+
+    p {
+      font-size: 1.5rem;
+      font-weight: 400;
+    }
+  }
+
+}

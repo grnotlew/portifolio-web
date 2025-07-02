@@ -1,0 +1,12 @@
+.wrapper{
+  padding: 0 2.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 1080px) {
+  .wrapper{
+    padding: 0 1.5rem;
+  }
+
+}

@@ -1,7 +1,6 @@
 @use '../../_app.component.scss' as app;
 
 .card-item {
-  width: 32.5rem;
   background-color: app.$base-color;
   padding: 1.65rem 1.5rem;
 
@@ -29,7 +28,7 @@
   gap: 0.5rem;
   margin: 1rem 0;
 
-  span{
+  span {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     background-color: app.$terciary-color;
@@ -37,5 +36,54 @@
     border-radius: 0.15rem;
     text-transform: uppercase;
     font-size: 0.75rem;
+  }
+}
+
+
+@media (min-width: 720px) and (max-width: 1080px) {
+  .card-item {
+    background-color: app.$base-color;
+    padding: 1.65rem 1.5rem;
+
+    h3 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin: 0 0 1rem 0;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 500;
+    }
+
+    p {
+      font-size: 1rem;
+      font-weight: 400;
+      margin: 1rem 0 0 0;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
+    }
+  }
+}
+
+@media (max-width: 720px) {
+  .card-item {
+    background-color: app.$base-color;
+    padding: 1.65rem 1.5rem;
+
+    h3 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin: 0 0 1rem 0;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 500;
+    }
+
+    p {
+      font-size: 1rem;
+      font-weight: 400;
+      margin: 1rem 0 0 0;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
+    }
   }
 }
